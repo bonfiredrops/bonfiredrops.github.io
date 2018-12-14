@@ -175,10 +175,6 @@ img.a {
 <div id="root"></div>
 </div>
 	
-<button type="button" class="btn btn-default" aria-label="Left Align">
-  <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-</button>	
-	
 <br>   
  <br>
 <!-- Below is the Google Ad Unit Info --> 
@@ -365,7 +361,7 @@ img.a {
             var item = category.items[itemCount];
             var title = item.title;
             var file = item.file;
-            itemHTML += '<audio id="#file" src="#file"></audio><button class="btn btn-primary btn-lg"  onclick="document.getElementById(\'#file\').play()">#title</button>'
+            itemHTML += '<audio id="#file" src="#file"></audio><button class="btn btn-primary btn-lg"  onclick="document.getElementById(\'#file\').play()"><span class="glyphicon glyphicon-play" aria-hidden="true"></span>#title </button>'
               .replace(/#file/g, file)
               .replace(/#title/g, title);
           }
@@ -382,5 +378,8 @@ function myFunction(x) {
 
 </body>
 
-
+<button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+</button>	
+	
 </html>
