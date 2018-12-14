@@ -66,17 +66,23 @@ display: inline-block;
  			padding-bottom: 2%;
 			background-color: #f5f5f5;
 	}
-	
    .header
    {
     height: auto;
     width:100%;
     padding-top: 1%;
     padding-bottom: 10%
-
-   }
-		
+   }		
 }
+		
+<div id="container">
+  <button class="learn-more">
+    <div class="circle">
+      <span class="icon arrow"></span>
+    </div>
+    <p class="button-text">Learn More</p>
+  </button>
+</div>
 		
 /* Banner */		
 .menu {
@@ -168,6 +174,11 @@ img.a {
 <button class="btn btn-primary btn-lg" style="background:firebrick" onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0;})">Stop Audio</button>
 <div id="root"></div>
 </div>
+	
+<button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+</button>	
+	
 <br>   
  <br>
 <!-- Below is the Google Ad Unit Info --> 
