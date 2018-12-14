@@ -361,7 +361,10 @@ img.a {
             var item = category.items[itemCount];
 	    var title = item.title 
             var file = item.file;
-            itemHTML += '<audio id="#file" src="#file"></audio><button class="btn btn-primary btn-lg"  onclick="document.getElementById(\'#file\').play()"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> #title </button>'
+		  
+	    var lbl = item.title  
+		  
+            itemHTML += '<audio id="#file" src="#file"></audio><button class="btn btn-primary btn-lg"  onclick="document.getElementById(\'#file\').play()"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button> #title  '
               .replace(/#file/g, file)
               .replace(/#title/g, title);
           }
