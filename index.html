@@ -359,7 +359,7 @@ img.a {
           var itemHTML = '<h4>' + category.name + '</h4>';
           for (var itemCount = 0; itemCount < category.items.length; itemCount++) {
             var item = category.items[itemCount];
-	    var text = item.title 
+	    var title = item.title 
             var file = item.file;
             itemHTML += '<audio id="#file" src="#file"></audio><button class="btn btn-primary btn-lg"  onclick="document.getElementById(\'#file\').play()"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> #title </button>'
               .replace(/#file/g, file)
